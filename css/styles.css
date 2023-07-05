@@ -26,7 +26,7 @@ img {
 body {
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
-  color: #434455;
+  color: var(--secondary-text-color);
 }
 .container {
   width: 100%;
@@ -59,80 +59,71 @@ body {
 
 /*----------HEADER----------*/
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid var(--cornflower, #e7e9fc);
-  background-color: var(--white, #fff);
+  padding: 24px 0;
+  border-bottom: 1px solid #e7e9fc;
+}
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+.header-container {
+  display: flex;
 }
 .header-logo {
   color: #4d5ae5;
   font-size: 18px;
-  font-family: Raleway, sans-serif;
+  font-family: var(--secodary-font);
   font-weight: 800;
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  display: flex;
   margin-right: 76px;
 }
-.header-conteiner {
-  display: flex;
-  align-items: center;
-}
-.header-nav {
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
-  justify-content: flex-start;
+.header-logo-studio {
+  color: var(--main-text-color);
 }
 .header-menu {
   display: flex;
   gap: 40px;
 }
-
-.header-logo-studio {
-  color: var(--main-text-color);
-}
-
 .header-menu-link {
   color: var(--main-text-color);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding: 24px 0;
 }
 .header-menu-link:hover,
 .header-menu-link:focus {
   color: #404bbf;
+  padding: 24px 0;
 }
-.address-menu {
-  display: flex;
-  gap: 40px;
-  margin-right: auto;
+.header-address {
+  font-style: normal;
+  margin-left: auto;
 }
-.address-menu-link {
+.header-address-link {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-.address {
-  font-style: normal;
-  margin-left: auto;
-}
-.address-menu-link:hover,
-.address-menu-link:focus {
+.header-address-link:hover,
+.header-address-link:focus {
   color: #404bbf;
 }
-
+.header-address-list {
+  display: flex;
+  gap: 40px;
+}
 /*----------HERO----------*/
 .hero {
-  background-color: var(--main-text-color);
-}
-.hero-container {
   padding-top: 188px;
   padding-bottom: 188px;
+  background-color: var(--main-text-color);
 }
+
 .hero-title {
   color: #fff;
   text-align: center;
