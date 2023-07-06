@@ -105,6 +105,7 @@ body {
 }
 .header-address-link {
   color: var(--secondary-text-color);
+  font-style: normal;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -176,6 +177,7 @@ body {
 .skills-title {
   color: var(--main-text-color);
   font-size: 20px;
+  font-style: normal;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
@@ -184,6 +186,8 @@ body {
 .skills-text {
   color: var(--secondary-text-color);
   font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
@@ -210,7 +214,6 @@ body {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  max-width: 323px;
   margin: 0 auto;
   margin-bottom: 72px;
 }
@@ -258,7 +261,6 @@ body {
   gap: 24px;
 }
 .team-img {
-  margin-bottom: 32px;
 }
 .team-item {
   width: calc((100%-24 * 3 / 4));
